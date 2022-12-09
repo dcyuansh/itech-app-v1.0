@@ -59,7 +59,7 @@
           </el-col>
         </el-row>
 
-        <div style=" text-align: center;margin-bottom: 20px;">
+        <div style=" text-align: center;margin-bottom: 10px;">
           <el-button type="primary"
                      round
                      @click="handleQuery()">查询结果</el-button>
@@ -74,7 +74,6 @@
     <!--显示内容 begin-->
     <div class="div-style">
       <el-table :data="tableData.slice((currentPage-1)*pageSize,currentPage*pageSize)"
-                height="310"
                 border
                 style="width: 100%"
                 v-on:row-dblclick="rowdblclick">
@@ -138,7 +137,7 @@
         </el-table-column>
       </el-table>
       <!--分页begin-->
-      <el-pagination align='center'
+      <el-pagination 
                      @size-change="handleSizeChange"
                      @current-change="handleCurrentChange"
                      :current-page="currentPage"
@@ -453,7 +452,10 @@ export default {
 }
 /***div边框设置  border: 1px dashed #000;*/
 .div-style {
-  margin-top: 20px;
+  margin-top: 10px;
   border: 1px solid #e6e6e6;
+}
+.el-pagination{
+  justify-content: center
 }
 </style>

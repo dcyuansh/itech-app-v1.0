@@ -1,6 +1,6 @@
 <template>
   <div class="footer-css">
-    <span> &copy; 2021 iTech| By De Chun Yuan </span>
+    <span> &copy; 2023 iTech| By De Chun Yuan </span>
   </div>
 </template>
 
