@@ -75,17 +75,18 @@
     <div class="div-style">
       <el-table :data="tableData.slice((currentPage-1)*pageSize,currentPage*pageSize)"
                 border
+                max-height="850"
                 style="width: 100%"
                 v-on:row-dblclick="rowdblclick">
         <el-table-column fixed
                          prop="insertTime"
                          label="时间"
-                         width="100">
+                         width="120">
         </el-table-column>
         <el-table-column fixed
                          prop="taskNo"
                          label="任务编码"
-                         width="100">
+                         width="120">
         </el-table-column>
         <el-table-column fixed
                          prop="taskType"
@@ -95,7 +96,7 @@
         <el-table-column fixed
                          prop="taskSubject"
                          label="任务主题"
-                         width="220">
+                         width="240">
         </el-table-column>
         <el-table-column fixed
                          prop="systemName"
@@ -110,24 +111,26 @@
         <el-table-column fixed
                          prop="estimatedEffort"
                          label="预估工时"
-                         width="80">
+                         width="90">
         </el-table-column>
         <el-table-column fixed
                          prop="actualEffort"
                          label="实际工时"
-                         width="80">
+                         width="90">
         </el-table-column>
         <el-table-column fixed
                          prop="status"
                          label="状态"
                          width="100">
         </el-table-column>
+        <!--
         <el-table-column fixed
                          prop="taskContent"
                          label="内容">
         </el-table-column>
+        -->
         <el-table-column label="操作"
-                         width="100">
+                         width="110">
           <template v-slot="scope">
             <el-button size="mini"
                        type='primary'
