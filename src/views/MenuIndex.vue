@@ -11,10 +11,9 @@
       </el-main>
 
        <!-- 页脚 -->
-        <el-footer style="padding: 0px;">
-          <v-footer></v-footer>
-        </el-footer>
-     
+      <el-footer style="padding: 0px;">
+        <v-footer></v-footer>
+      </el-footer>
     </el-container>
 </template>
   
