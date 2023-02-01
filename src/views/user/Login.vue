@@ -58,6 +58,11 @@ export default {
   methods: {
     // 登陆
     handleLogin () {
+      if (localStorage.getItem('Authorization')) {
+        //清除缓存  
+        localStorage.removeItem("username");
+        localStorage.removeItem("Authorization");
+      }
       login(this.loginForm)
         .then(res => {
           if (res.status == 'SUCCESS') {
